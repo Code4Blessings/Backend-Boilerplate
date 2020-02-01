@@ -36,7 +36,7 @@ function add(user) {
 function update(id, user) {
     return db('users')
         .where('id', Number(id))
-        .update(post);
+        .update(user);
 }
 
 function remove(id) {
